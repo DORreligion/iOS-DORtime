@@ -10,6 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var getDORtime: UITextField!
+    @IBOutlet weak var getGregDate: UIDatePicker!
+    @IBOutlet weak var getGregTime: UIDatePicker!
+    
+    @IBAction func dorTimeChanged(sender: UITextField) {
+        print(getDORtime.text)
+    }
+    
+    @IBAction func gregDateChanged(sender: UIDatePicker) {
+        print(getGregDate.date)
+    }
+    
+    @IBAction func gregTimeChanged(sender: UIDatePicker) {
+        print(getGregTime.date)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,4 +38,3 @@ class ViewController: UIViewController {
 
 
 }
-
